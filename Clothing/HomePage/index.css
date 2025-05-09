@@ -1,0 +1,340 @@
+/* General Reset and Typography */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Header */
+header {
+  background-color: #f5f5f5;
+  padding: 25px 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0 0 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #8c7654;
+  transition: width 0.4s ease;
+}
+
+nav a:hover {
+  color: #8c7654;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e0dede, #f5f5f5);
+  padding: 80px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: white;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6b5a3c;
+}
+
+/* Featured Categories */
+.featured-categories {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.featured-categories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.category-card h3 {
+  margin: 12px 0 16px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Gallery Section */
+/* Gallery Section */
+.gallery {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  justify-content: center;
+   text-align: center;
+   font-size: 30px;
+}
+
+.gallery h2{
+  justify-content: center;
+}
+
+.gallery-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  justify-content: center; /* Centers the gallery grid horizontally */
+}
+
+.small-images {
+  display: contents; /* Let each image fill grid cell */
+}
+
+.gallery-layout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Testimonials Section */
+.testimonials {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  max-width: 280px;
+  font-style: italic;
+  color: #555;
+  position: relative;
+}
+
+.testimonial footer {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #333;
+}
+
+/*-------------------------FOOTER---------------------------------------------------*/
+/* Footer Styles */
+footer {
+  padding: 5px 5px;
+  background-color: #ddd;
+  color: #000;  /* Set text color to black */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer Content Flexbox */
+.footer-content {
+  display: flex;
+  justify-content: center; /* Center both sections horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 40px; /* Add space between the two sections */
+  margin-bottom: 5px;
+}
+
+.footer-logo .logo-name {
+  font-family: 'Press Start 2P', cursive;
+  color: #000;
+}
+
+.footer-logo .mini-phrase {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 50%; /* Half of the footer width */
+}
+
+.contact-info {
+  font-style: normal; /* Override the default italic style of <address> */
+  color: #000;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: left; /* Align title text to the left */
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #333;  /* Dark gray for text */
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #333;  /* Dark gray for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #000;  /* Change link color to black on hover */
+}
+
+/* Social Media Links */
+.social-links {
+  text-align: center;
+}
+
+.social-icon {
+  color: #333;  /* Default dark gray for icons */
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);  /* Slight zoom effect */
+  color: inherit;  /* Maintain original color of icons */
+}
+
+/* Specific social media icon colors */
+.social-icon.facebook:hover {
+  color: #000; /* Facebook Black */
+}
+
+.social-icon.twitter:hover {
+  color: #000; /* Twitter Black */
+}
+
+.social-icon.instagram:hover {
+  color: #000; /* Instagram Black */
+}
+
+.social-icon.tiktok:hover {
+  color: #000; /* TikTok Black */
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #333;  /* Dark gray text */
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+}

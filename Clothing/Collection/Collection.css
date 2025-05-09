@@ -1,0 +1,297 @@
+/* General Reset and Typography */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Header */
+header {
+  background-color: #f5f5f5;
+  padding: 25px 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0 0 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #8c7654;
+  transition: width 0.4s ease;
+}
+
+nav a:hover {
+  color: #8c7654;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.05);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333;
+  text-shadow: none;
+  margin-top: 0;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.category-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.category-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(85,85,85,0.5);
+}
+
+.products {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.product-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 6px 0 4px;
+  font-size: 16px;
+  color: #000;
+}
+
+.product-card p {
+  font-family: 'Press Start', sans-serif;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Category Section Headers */
+.category-section h2 {
+  font-family: 'Press Start 2P';
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.promo-message {
+text-align: center;
+margin-top: 30px;
+padding: 20px 25px;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.2rem;
+color: #555;
+font-style: italic;
+border-top: 1px solid #ccc;
+}
+
+/*-------------------------FOOTER---------------------------------------------------*/
+/* Footer Styles */
+footer {
+  padding: 5px 5px;
+  background-color: #ddd;
+  color: #000;  /* Set text color to black */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer Content Flexbox */
+.footer-content {
+  display: flex;
+  justify-content: center; /* Center both sections horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 40px; /* Add space between the two sections */
+  margin-bottom: 5px;
+}
+
+.footer-logo .logo-name {
+  font-family: 'Press Start 2P', cursive;
+  color: #000;
+}
+
+.footer-logo .mini-phrase {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 50%; /* Half of the footer width */
+}
+
+.contact-info {
+  font-style: normal; /* Override the default italic style of <address> */
+  color: #000;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: left; /* Align title text to the left */
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #333;  /* Dark gray for text */
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #333;  /* Dark gray for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #000;  /* Change link color to black on hover */
+}
+
+/* Social Media Links */
+.social-links {
+  text-align: center;
+}
+
+.social-icon {
+  color: #333;  /* Default dark gray for icons */
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);  /* Slight zoom effect */
+  color: inherit;  /* Maintain original color of icons */
+}
+
+/* Specific social media icon colors */
+.social-icon.facebook:hover {
+  color: #000; /* Facebook Black */
+}
+
+.social-icon.twitter:hover {
+  color: #000; /* Twitter Black */
+}
+
+.social-icon.instagram:hover {
+  color: #000; /* Instagram Black */
+}
+
+.social-icon.tiktok:hover {
+  color: #000; /* TikTok Black */
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #333;  /* Dark gray text */
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+}
